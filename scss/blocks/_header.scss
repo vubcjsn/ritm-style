@@ -1,0 +1,42 @@
+@import "../vars";
+@import "../mixins";
+
+.header {
+  padding-top: 30;
+  margin-bottom: 50;
+
+  &-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &-menu {
+    @include reset-list;
+    display: flex;
+    gap: 50px;
+
+    &-link {
+      color: $white;
+      font-family: $main-font;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 135%;
+      letter-spacing: 0%;
+      text-align: left;
+      text-decoration: none;
+    }
+  }
+  &-cta {
+    padding: 9px 15px;
+    color: $white;
+    font-family: $main-font;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 140%;
+    letter-spacing: 0%;
+    text-align: left;
+    background-color: $accent;
+    border-radius: 3px;
+  }
+}
